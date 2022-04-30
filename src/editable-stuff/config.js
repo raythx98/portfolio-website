@@ -6,30 +6,26 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Hashir",
+  firstName: "Ray Toh",
   middleName: "",
-  lastName: "Shoaib",
-  message: " Passionate about changing the world with technology. ",
+  lastName: "H. X.",
+  message: "I aspire to build systems to create a fully digitized and automated world.",
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
+      url: "https://github.com/raythx98",
     },
     {
       image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
+      url: "https://www.facebook.com/raythx98/",
     },
     {
       image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
+      url: "https://www.instagram.com/ray.thx/",
     },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
-    },
-    {
-      image: "fa-twitter",
-      url: "https://www.twitter.com/hashirshoaeb/",
+      url: "https://www.linkedin.com/in/raythx/",
     },
   ],
 };
@@ -51,11 +47,13 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../assets/ray.png"),
   imageSize: 375,
   message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+    "I am a software engineer, excited by the potential of technology in solving real-world problems. I have a formal education in NUS Computer Science, where I specialised in AI, computer networking and information security. With these skills, it is my conviction to create a digitalised world backed by an impenetrable system." ,
+  message2:
+    "I started programming at the small age of 16 — I was fresh out of high school and assigned to engineer chat-bot technology during my first ever internship. During the process, I learned the fundamentals of programming and software development and applied them to create a working chat-bot prototype. Having enjoyed my experience, I decided to further my interest in Computer Science, which brings me to where I am today. ",
+  resume: require("../assets/Ray Toh CV.pdf"),
 };
 
 // PROJECTS SECTION
@@ -66,8 +64,8 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
-  reposLength: 4,
+  gitHubUsername: "raythx98", //i.e."johnDoe12Gh"
+  reposLength: 6,
   specificRepos: [],
 };
 
@@ -79,12 +77,12 @@ const leadership = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../assets/ray.png"), 
       label: "First slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../assets/ray.png"), 
       label: "Second slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
@@ -99,25 +97,42 @@ const leadership = {
 const skills = {
   show: true,
   heading: "Skills",
-  hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+  languages: [
+    { name: "Golang", value: 50 },
+    { name: "C++", value: 90 },
+    { name: "Python", value: 85 },
+    { name: "Java", value: 80 },
+    { name: "C#", value: 70 },
+    { name: "C", value: 65 },
+    { name: "JavaScript", value: 55 },
   ],
-  softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
+  databases: [
+    { name: "PostgreSQL", value: 90 },
+    { name: "MySQL", value: 85 },
+    { name: "MongoDB", value: 80 },
+    { name: "MariaDB", value: 60 },
+    { name: "Redis", value: 55 },
+    { name: "Elasticsearch", value: 50 }
+  ],
+  backend: [
+    { name: "Node.js", value: 80 },
+    { name: "Django", value: 90 },
+    { name: "RESTful APIs", value: 85 },
+    { name: "AWS S3", value: 75 },
+    { name: "AWS RDS", value: 70 },
+    { name: "AWS EC2", value: 80 },
+    { name: "AWS Lambdas", value: 85 },
+  ],
+  blockchain: [
+    { name: "Solidity", value: 15 },
+    { name: "EVM", value: 10 }
+  ],
+  devops: [
+    { name: "Git", value: 90 },
+    { name: "OpenShift", value: 75 },
+    { name: "Kubernetes", value: 70 },
+    { name: "Apache Kafka", value: 65 },
+    { name: "Jenkins", value: 60 }
   ],
 };
 
@@ -126,8 +141,8 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+    "I'm currently looking for full-time Software Engineering or Blockchain opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+  email: "hongxian@comp.nus.edu.sg",
 };
 
 const experiences = {
