@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/react-portfolio-website/static/css/main.fb882722.chunk.css",
-    "main.js": "/react-portfolio-website/static/js/main.291eaeb4.chunk.js",
-    "main.js.map": "/react-portfolio-website/static/js/main.291eaeb4.chunk.js.map",
-    "runtime-main.js": "/react-portfolio-website/static/js/runtime-main.6a6ef263.js",
-    "runtime-main.js.map": "/react-portfolio-website/static/js/runtime-main.6a6ef263.js.map",
-    "static/js/2.56c71e8b.chunk.js": "/react-portfolio-website/static/js/2.56c71e8b.chunk.js",
-    "static/js/2.56c71e8b.chunk.js.map": "/react-portfolio-website/static/js/2.56c71e8b.chunk.js.map",
-    "index.html": "/react-portfolio-website/index.html",
-    "precache-manifest.8a3ccf3aa452d4dedec74e821b32c3d5.js": "/react-portfolio-website/precache-manifest.8a3ccf3aa452d4dedec74e821b32c3d5.js",
-    "service-worker.js": "/react-portfolio-website/service-worker.js",
-    "static/css/main.fb882722.chunk.css.map": "/react-portfolio-website/static/css/main.fb882722.chunk.css.map",
-    "static/js/2.56c71e8b.chunk.js.LICENSE.txt": "/react-portfolio-website/static/js/2.56c71e8b.chunk.js.LICENSE.txt",
-    "static/media/Ray Toh CV.pdf": "/react-portfolio-website/static/media/Ray Toh CV.3036b09b.pdf",
-    "static/media/ray.png": "/react-portfolio-website/static/media/ray.adb7a25a.png"
+    "main.css": "/static/css/main.fb882722.chunk.css",
+    "main.js": "/static/js/main.57543b00.chunk.js",
+    "main.js.map": "/static/js/main.57543b00.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.554504a0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.554504a0.js.map",
+    "static/js/2.56c71e8b.chunk.js": "/static/js/2.56c71e8b.chunk.js",
+    "static/js/2.56c71e8b.chunk.js.map": "/static/js/2.56c71e8b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8945f0faaa342622fe1e97a2fb9291a3.js": "/precache-manifest.8945f0faaa342622fe1e97a2fb9291a3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.fb882722.chunk.css.map": "/static/css/main.fb882722.chunk.css.map",
+    "static/js/2.56c71e8b.chunk.js.LICENSE.txt": "/static/js/2.56c71e8b.chunk.js.LICENSE.txt",
+    "static/media/Ray Toh CV.pdf": "/static/media/Ray Toh CV.3036b09b.pdf",
+    "static/media/ray.png": "/static/media/ray.adb7a25a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6a6ef263.js",
+    "static/js/runtime-main.554504a0.js",
     "static/js/2.56c71e8b.chunk.js",
     "static/css/main.fb882722.chunk.css",
-    "static/js/main.291eaeb4.chunk.js"
+    "static/js/main.57543b00.chunk.js"
   ]
 }
