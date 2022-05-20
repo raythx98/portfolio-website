@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
@@ -39,10 +38,10 @@ const Navigation = React.forwardRef((props, ref) => {
       }`}
       expand="lg"
     >
-      <Navbar.Brand className="brand" href={process.env.PUBLIC_URL + "/#home"}>
+      <Navbar.Brand style={{color:"#5E5946"}} href={process.env.PUBLIC_URL + "/#home"}>
         {`<${mainBody.firstName} />`}
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" style={{color:"#5E5946"}}/>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           {/* {
@@ -53,6 +52,7 @@ const Navigation = React.forwardRef((props, ref) => {
           {about.show && (
             <Nav.Link
               className="nav-link lead"
+              style={{color:"#5E5946"}}
               href={process.env.PUBLIC_URL + "/#aboutme"}
             >
               About
@@ -61,6 +61,7 @@ const Navigation = React.forwardRef((props, ref) => {
           {(
             <Nav.Link
               className="nav-link lead"
+              style={{color:"#5E5946"}}
               href={process.env.PUBLIC_URL + "/#experience"}
             >
               Experience
@@ -69,6 +70,7 @@ const Navigation = React.forwardRef((props, ref) => {
           {skills.show && (
             <Nav.Link
               className="nav-link lead"
+              style={{color:"#5E5946"}}
               href={process.env.PUBLIC_URL + "/#skills"}
             >
               Skills
@@ -77,6 +79,7 @@ const Navigation = React.forwardRef((props, ref) => {
           {repos.show && (
             <Nav.Link
               className="nav-link lead"
+              style={{color:"#5E5946"}}
               href={process.env.PUBLIC_URL + "/#projects"}
             >
               Projects
@@ -84,6 +87,7 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {<Nav.Link
             className="nav-link lead"
+            style={{color:"#5E5946"}}
             href={about.resume}
             target="_blank"
             rel="noreferrer noopener"

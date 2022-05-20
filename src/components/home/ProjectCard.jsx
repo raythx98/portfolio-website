@@ -1,139 +1,94 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React  from "react";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
-import axios from "axios";
+import './style.min.css';
 
 const ProjectCard = ({ value }) => {
   const {
+    element,
+    imgLink,
     name,
     description,
-    svn_url,
-    stargazers_count,
-    languages_url,
-    pushed_at,
+    languages,
+    repo_url,
+    demo_url,
   } = value;
   return (
     <Col md={6}>
-      <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
-        <Card.Body>
-          <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-          <Card.Text>{(!description)?"":description || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
+      <Card className={`card shadow-lg mb-5 rounded color-element${element}`}>
+        <Card.Img
+          src={imgLink}
+          className="card-img-top"
+          alt="..."
+        ></Card.Img>
+        <Card.Body className="ml-3 mr-3 mb-3">
+          <Card.Title as="h4" style={{color:"#5E5946"}}>{name || <Skeleton />} </Card.Title>
+          <Card.Text style={{color:"#5E5946"}}>
+            {!description ? "" : description || <Skeleton count={3} />}{" "}
+          </Card.Text>
+
           <hr />
-          {languages_url ? (
-            <Language languages_url={languages_url} repo_url={svn_url} />
+          {languages.length ? (
+            <Language languages={languages} element = {element} />
           ) : (
             <Skeleton count={3} />
           )}
-          {value ? (
-            <CardFooter star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} />
-          ) : (
-            <Skeleton />
-          )}
+          {!repo_url && !demo_url ? <Skeleton count={2} /> : null}
+          {repo_url ? <RepoCardButtons repo_url={repo_url} /> : null}
+          {demo_url ? <DemoCardButtons demo_url={demo_url} /> : null}
         </Card.Body>
       </Card>
     </Col>
   );
 };
 
-const CardButtons = ({ svn_url }) => {
+const RepoCardButtons = ({ repo_url }) => {
   return (
     <>
-      <a
-        href={`${svn_url}/archive/master.zip`}
-        className="btn btn-outline-secondary mr-3"
+      <a 
+        href={repo_url} 
+        target=" _blank" 
+        className="btn btn-outline-secondary mr-3 mt-3"
       >
-        <i className="fab fa-github" /> Clone Project
-      </a>
-      <a href={svn_url} target=" _blank" className="btn btn-outline-secondary">
-        <i className="fab fa-github" /> Repo
+        <i className="fab fa-github" /> Project Repo
       </a>
     </>
   );
 };
 
-const Language = ({ languages_url, repo_url }) => {
-  const [data, setData] = useState([]);
-
-  const handleRequest = useCallback(async () => {
-    try {
-      const response = await axios.get(languages_url);
-      return setData(response.data);
-    } catch (error) {
-      console.error(error.message);
-    }
-  }, [languages_url]);
-
-  useEffect(() => {
-    handleRequest();
-  }, [handleRequest]);
-
-  const array = [];
-  let total_count = 0;
-  for (let index in data) {
-    array.push(index);
-    total_count += data[index];
-  }
-
+const DemoCardButtons = ({ demo_url }) => {
   return (
-    <div className="pb-3">
-      Languages:{" "}
-      {array.length
-        ? array.map((language) => (
-            <a
-              key={language} 
-              className="badge badge-light card-link"
-              href={repo_url + `/search?l=${language}`}
-              target=" _blank"
-            >
-              {language}:{" "}
-              {Math.trunc((data[language] / total_count) * 1000) / 10} %
-            </a>
-          ))
-        : "code yet to be deployed."}
-    </div>
+    <>
+      <a 
+        href={demo_url} 
+        target=" _blank" 
+        className="btn btn-outline-secondary mt-3"
+      >
+        <i className="fab fa-github" /> View
+      </a>
+    </>
   );
 };
 
-const CardFooter = ({ star_count, repo_url, pushed_at }) => {
-  const [updated_at, setUpdated_at] = useState("0 mints");
-
-  const handleUpdatetime = useCallback(() => {
-    const date = new Date(pushed_at);
-    const nowdate = new Date();
-    const diff = nowdate.getTime() - date.getTime();
-    const hours = Math.trunc(diff / 1000 / 60 / 60);
-
-    if (hours < 24) {
-      if (hours < 1) return setUpdated_at("just now");
-      let measurement = hours === 1 ? "hour" : "hours";
-      return setUpdated_at(`${hours.toString()} ${measurement} ago`);
-    } else {
-      const options = { day: "numeric", month: "long", year: "numeric" };
-      const time = new Intl.DateTimeFormat("en-US", options).format(date);
-      return setUpdated_at(`on ${time}`);
-    }
-  }, [pushed_at]);
-
-  useEffect(() => {
-    handleUpdatetime();
-  }, [handleUpdatetime]);
+const Language = ({ languages, element }) => {
 
   return (
-    <p className="card-text">
-      <a
-        href={repo_url + "/stargazers"}
-        target=" _blank"
-        className="text-dark text-decoration-none"
-      >
-        <span className="text-dark card-link mr-4">
-          <i className="fab fa-github" /> Stars{" "}
-          <span className="badge badge-dark">{star_count}</span>
-        </span>
-      </a>
-      <small className="text-muted">Updated {updated_at}</small>
-    </p>
+    <div>
+      {languages.length
+        ? languages.map((language) => (
+            <a
+              key={language} 
+              className={`badge badge-light card-link element${element}`}
+              href={`https://www.google.com/search?q=${language}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {language}
+            </a>
+          ))
+        : "No code required."}
+    </div>
   );
 };
 

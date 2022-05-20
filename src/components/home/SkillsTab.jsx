@@ -22,13 +22,13 @@ function SkillsTab({ skills, isScrolled }) {
     <>
       <Col xs={12} md={6}>
         <SkillsSection
-          skills={skills.slice(0, Math.floor(skills.length / 2))}
+          skills={skills.slice(0, Math.ceil(skills.length / 2))}
           isScrolled={isScrolled}
         />
       </Col>
       <Col xs={12} md={6}>
         <SkillsSection
-          skills={skills.slice(Math.floor(skills.length / 2), skills.length)}
+          skills={skills.slice(Math.ceil(skills.length / 2), skills.length)}
           isScrolled={isScrolled}
         />
       </Col>

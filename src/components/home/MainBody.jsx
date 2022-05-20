@@ -1,5 +1,6 @@
 import React from "react";
 import Typist from "react-typist";
+import './style.min.css';
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 
@@ -10,6 +11,7 @@ const MainBody = React.forwardRef(
         fluid
         id="home"
         style={{
+          // backgroundColor: "#ffffff",
           background: `linear-gradient(136deg,${gradient})`,
           backgroundSize: "1200% 1200%",
         }}
@@ -17,14 +19,14 @@ const MainBody = React.forwardRef(
       >
         <div id="stars"></div>
         <Container className="text-center">
-          <h1 ref={ref} className="display-1">
+          <h1 ref={ref} className="display-1 hero-shadow">
             {title}
           </h1>
-          <Typist className="lead typist" cursor={{ show: false }}>
+          <Typist className="lead typist h2 mb-0 body-line-height hero-shadow" cursor={{ show: false }}>
             {" "}
             {message}
           </Typist>
-          <div className="p-5">
+          <div className="p-5 hero-shadow">
             {icons.map((icon, index) => (
               <a
                 key={`social-icon-${index}`}
@@ -38,7 +40,7 @@ const MainBody = React.forwardRef(
             ))}
           </div>
           <a
-            className="btn btn-outline-light btn-lg "
+            className="btn btn-outline-light btn-lg hero-shadow"
             href="#aboutme"
             role="button"
             aria-label="Learn more about me"

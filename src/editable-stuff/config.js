@@ -5,11 +5,12 @@ const navBar = {
 
 // Main Body SECTION
 const mainBody = {
-  gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
+  gradientColors: "#AE887B, #C3C1AB, #F0DED0, #D9BFB1, #5E5946",
+  // gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
   firstName: "Ray Toh",
   middleName: "",
   lastName: "H. X.",
-  message: "I aspire to build systems to create a fully digitized and automated world.",
+  message: "Software Engineer | Blockchain Enthusiast",
   icons: [
     {
       image: "fa-github",
@@ -118,10 +119,10 @@ const skills = {
     { name: "Node.js", value: 80 },
     { name: "Django", value: 90 },
     { name: "RESTful APIs", value: 85 },
-    { name: "AWS S3", value: 75 },
-    { name: "AWS RDS", value: 70 },
     { name: "AWS EC2", value: 80 },
     { name: "AWS Lambdas", value: 85 },
+    { name: "AWS S3", value: 75 },
+    { name: "AWS RDS", value: 70 },
   ],
   blockchain: [
     { name: "Solidity", value: 15 },

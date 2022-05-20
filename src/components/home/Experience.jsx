@@ -1,25 +1,26 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import './style.min.css';
 import SchoolIcon from '@material-ui/icons/School';
-import StarIcon from '@material-ui/icons/Star';
 import WorkIcon from '@material-ui/icons/Work';
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
 
 const Experience = () => {
  return (
-	 <Jumbotron fluid id="experience" className="bg-light m-0">
-        <h2 className="display-4 pb-5 text-center">Experiences</h2>
+	 <Jumbotron fluid id="experience" className="m-0" style={{
+		minHeight: "100vh", backgroundColor:"#F6F1EC"
+	}}>
+        <h2 className="display-4 pb-5 text-center" style={{color:"#5E5946"}}>Experiences</h2>
 		<Container className="p-7">
 			 <VerticalTimeline>
 
 				  <VerticalTimelineElement
 					className="vertical-timeline-element--work"
-					contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-					contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+					contentStyle={{ background: '#AE887B', color: '#F6F1EC' }}
+					contentArrowStyle={{ borderRight: '7px solid  #AE887B' }}
 					date="May 2022 - August 2022"
-					iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+					iconStyle={{ background: '#5E5946', color: '#F6F1EC' }}
 					icon={<WorkIcon />}
 				  >
 					<h3 className="vertical-timeline-element-title">Agile Software Engineer Internship</h3>
@@ -31,10 +32,10 @@ const Experience = () => {
 
 				  <VerticalTimelineElement
 					className="vertical-timeline-element--work"
-					contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-					contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+					contentStyle={{ background: '#D9BFB1', color: '#5E5946' }}
+					contentArrowStyle={{ borderRight: '7px solid  #D9BFB1' }}
 					date="Dec 2021 - Feb 2022"
-					iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+					iconStyle={{ background: '#5E5946', color: '#F6F1EC' }}
 					icon={<WorkIcon />}
 				  >
 					<h3 className="vertical-timeline-element-title">Backend Engineer Internship</h3>
@@ -46,11 +47,11 @@ const Experience = () => {
 
 				  <VerticalTimelineElement
 					className="vertical-timeline-element--work"
-					contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-					contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+					contentStyle={{ background: '#AE887B', color: '#F6F1EC' }}
+					contentArrowStyle={{ borderRight: '7px solid  #AE887B' }}
 					date="May 2021 - August 2021"
 
-					iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+					iconStyle={{ background: '#5E5946', color: '#F6F1EC' }}
 					icon={<WorkIcon />}
 				  >
 					<h3 className="text-align vertical-timeline-element-title">Machine Learning Engineer Internship</h3>
@@ -62,10 +63,10 @@ const Experience = () => {
 
 				   <VerticalTimelineElement
 					className="vertical-timeline-element--education"
-					contentStyle={{ background: 'rgb(0,0,128)', color: '#fff' }}
-					contentArrowStyle={{ borderRight: '7px solid  rgb(0,0,128)' }}
+					contentStyle={{ background: '#D9BFB1', color: '#5E5946' }}
+					contentArrowStyle={{ borderRight: '7px solid  #D9BFB1' }}
 					date="August 2019 - May 2023"
-					iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+					iconStyle={{ background: '#5E5946', color: '#F6F1EC' }}
 					icon={<SchoolIcon />}
 				  >
 					<h3 className="vertical-timeline-element-title">B.Comp (Honors) in Computer Science
@@ -75,11 +76,6 @@ const Experience = () => {
 					</p>
 				  </VerticalTimelineElement>
 
-
-				  <VerticalTimelineElement
-					iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-					icon={<StarIcon />}
-				  />
 			</VerticalTimeline>
 		</Container>
 	</Jumbotron>
