@@ -23,7 +23,7 @@ const ProjectCard = ({ value }) => {
           alt="..."
         ></Card.Img>
         <Card.Body className="ml-3 mr-3 mb-3">
-          <Card.Title as="h4" style={{color:"#5E5946"}}>{name || <Skeleton />} </Card.Title>
+          <Card.Title as="h3" style={{color:"#5E5946"}}>{name || <Skeleton />} </Card.Title>
           <Card.Text style={{color:"#5E5946"}}>
             {!description ? "" : description || <Skeleton count={3} />}{" "}
           </Card.Text>
@@ -35,21 +35,21 @@ const ProjectCard = ({ value }) => {
             <Skeleton count={3} />
           )}
           {!repo_url && !demo_url ? <Skeleton count={2} /> : null}
-          {repo_url ? <RepoCardButtons repo_url={repo_url} /> : null}
-          {demo_url ? <DemoCardButtons demo_url={demo_url} /> : null}
+          {repo_url ? <RepoCardButtons repo_url={repo_url} element={element}/> : null}
+          {demo_url ? <DemoCardButtons demo_url={demo_url} element={element}/> : null}
         </Card.Body>
       </Card>
     </Col>
   );
 };
 
-const RepoCardButtons = ({ repo_url }) => {
+const RepoCardButtons = ({ repo_url, element }) => {
   return (
     <>
       <a 
         href={repo_url} 
         target=" _blank" 
-        className="btn btn-outline-secondary mr-3 mt-3"
+        className={`btn btn-outline-secondary${element} mr-3 mt-2`}
       >
         <i className="fab fa-github" /> Project Repo
       </a>
@@ -57,13 +57,13 @@ const RepoCardButtons = ({ repo_url }) => {
   );
 };
 
-const DemoCardButtons = ({ demo_url }) => {
+const DemoCardButtons = ({ demo_url, element }) => {
   return (
     <>
       <a 
         href={demo_url} 
         target=" _blank" 
-        className="btn btn-outline-secondary mt-3"
+        className={`btn btn-outline-secondary${element} mt-2`}
       >
         <i className="fab fa-github" /> View
       </a>
@@ -79,7 +79,7 @@ const Language = ({ languages, element }) => {
         ? languages.map((language) => (
             <a
               key={language} 
-              className={`badge badge-light card-link element${element}`}
+              className={`mb-2 badge card-link element${element}`}
               href={`https://www.google.com/search?q=${language}`}
               target="_blank"
               rel="noopener noreferrer"

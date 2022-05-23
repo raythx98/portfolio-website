@@ -9,7 +9,7 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 const Experience = () => {
  return (
 	 <Jumbotron fluid id="experience" className="m-0" style={{
-		minHeight: "100vh", backgroundColor:"#F6F1EC"
+		backgroundColor:"#F9F4EF"
 	}}>
         <h2 className="display-4 pb-5 text-center" style={{color:"#5E5946"}}>Experiences</h2>
 		<Container className="p-7">
@@ -23,10 +23,11 @@ const Experience = () => {
 					iconStyle={{ background: '#5E5946', color: '#F6F1EC' }}
 					icon={<WorkIcon />}
 				  >
-					<h3 className="vertical-timeline-element-title">Agile Software Engineer Internship</h3>
-					<h4 className="vertical-timeline-element-subtitle">DBS Bank, Singapore</h4>
+					<h3 className="vertical-timeline-element-title">Agile Software Engineer</h3>
+					<h4 className="vertical-timeline-element-subtitle pt-1">Internship</h4>
+					<h4 className="vertical-timeline-element-subtitle pt-1">DBS Bank, Singapore</h4>
 					<p>
-                    Golang, MariaDB, Redis, Elasticsearch, Kubernetes, OpenShift, Apache, Kafka
+            Golang, MariaDB, Redis, Elasticsearch, Kubernetes, OpenShift, Apache, Kafka
 					</p>
 				  </VerticalTimelineElement>
 
@@ -38,10 +39,11 @@ const Experience = () => {
 					iconStyle={{ background: '#5E5946', color: '#F6F1EC' }}
 					icon={<WorkIcon />}
 				  >
-					<h3 className="vertical-timeline-element-title">Backend Engineer Internship</h3>
-					<h4 className="vertical-timeline-element-subtitle">Reluvate Technologies, Singapore</h4>
+					<h3 className="vertical-timeline-element-title">Backend Engineer</h3>
+					<h4 className="vertical-timeline-element-subtitle pt-1">Internship</h4>
+					<h4 className="vertical-timeline-element-subtitle pt-1">Reluvate Technologies, Singapore</h4>
 					<p>
-                    Django, Python, React.js, RESTful APIs, UAT, AWS EC2, AWS RDS, AWS S3
+            Django, Python, React.js, RESTful APIs, UAT, AWS EC2, AWS RDS, AWS S3
 					</p>
 				  </VerticalTimelineElement>
 
@@ -54,10 +56,11 @@ const Experience = () => {
 					iconStyle={{ background: '#5E5946', color: '#F6F1EC' }}
 					icon={<WorkIcon />}
 				  >
-					<h3 className="text-align vertical-timeline-element-title">Machine Learning Engineer Internship</h3>
-					<h4 className="vertical-timeline-element-subtitle">Defence Science & Technology Agency, Singapore</h4>
+					<h3 className="text-align vertical-timeline-element-title">Machine Learning Engineer</h3>
+					<h4 className="vertical-timeline-element-subtitle pt-1">Internship</h4>
+					<h4 className="vertical-timeline-element-subtitle pt-1">Defence Science & Technology Agency, Singapore</h4>
 					<p>
-                    Aritificial Intelligence, Deep Reinforcement Learning, Unity
+            Aritificial Intelligence, Deep Reinforcement Learning, Unity
 					</p>
 				  </VerticalTimelineElement>
 
@@ -69,10 +72,11 @@ const Experience = () => {
 					iconStyle={{ background: '#5E5946', color: '#F6F1EC' }}
 					icon={<SchoolIcon />}
 				  >
-					<h3 className="vertical-timeline-element-title">B.Comp (Honors) in Computer Science
-					</h3><h4 className="vertical-timeline-element-subtitle">National Univeristy of Singapore</h4>					
+					<h3 className="vertical-timeline-element-title">B.Comp (Honors) in Computer Science</h3>
+					<h4 className="vertical-timeline-element-subtitle pt-1">Undergraduate Student</h4>
+					<h4 className="vertical-timeline-element-subtitle pt-1">National Univeristy of Singapore</h4>					
 					<p>
-					 Graduated with distinction.
+						Graduated with distinction.
 					</p>
 				  </VerticalTimelineElement>
 

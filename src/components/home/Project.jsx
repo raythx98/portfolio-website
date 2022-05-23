@@ -28,7 +28,7 @@ const dummyProjectsArr = [
 const projectsArray = [
   { 
     element: 1,
-    imgLink: require("../../assets/img/dell.png"),
+    imgLink: require("../../assets/img/portfolio.png"),
     name: "Portfolio Website",
     description: "Built a mobile reactive webpage to showcase my projects and achievements. Acquired and managed a domain name and leveraged on Github Pages as a web hosting tool",
     languages: ["React", "Bootstrap", "Material-UI", "SEO","gh-pages"],
@@ -37,7 +37,7 @@ const projectsArray = [
   },
   { 
     element: 2,
-    imgLink: require("../../assets/img/dell.png"),
+    imgLink: require("../../assets/img/telegram-bot.png"),
     name: "Telegram Bot",
     description: "Developed a telegram bot using serverless architecture to send daily quirky messages to and family and friends. This is done asynchronously using serverless.",
     languages: ["Python", "Mongo DB", "AWS Lambdas", "Serverless", "Node.js"],
@@ -46,7 +46,7 @@ const projectsArray = [
   },
   { 
     element: 2,
-    imgLink: require("../../assets/img/dell.png"),
+    imgLink: require("../../assets/img/e-commerce.jpeg"),
     name: "E-Commerce App",
     description: "Developed a full-stack serverless web application using based on the MERN-AWS stack. Implemented CRUD operations on node.js using JWT Authentication with SHA-256 encryption",
     languages: ["JavaScript", "Mongo DB", "Express", "React", "Node.js", "Redux", "AWS EC2"],
@@ -55,8 +55,8 @@ const projectsArray = [
   },
   { 
     element: 1,
-    imgLink: require("../../assets/img/dell.png"),
-    name: "Java App Development",
+    imgLink: require("../../assets/img/java-app.png"),
+    name: "Java App Dev",
     description: "CANdidates is a powerful contact management application optimised for job recruiters; a brownfield project based on Address Book. Done as part of software engineering coursework, NUS CS2103T Software Engineering.",
     languages: ["Java", "JavaFX", "Travis CI", "JUnit5"],
     repo_url: "https://github.com/raythx98/Java-Address-Book#candidates",
@@ -67,7 +67,7 @@ const projectsArray = [
 const Project = ({ heading, username, length, specfic }) => {
   
   return (
-    <Jumbotron fluid id="projects" className="m-0" style={{minHeight:"100vh", backgroundColor:"#F6F1EC"}}>
+    <Jumbotron fluid id="projects" className="m-0" style={{backgroundColor:"#F9F4EF"}}>
       <Container className="">
         <h2 className="display-4 pb-5 text-center" style={{color:"#5E5946"}}>{heading}</h2>
         <Row>

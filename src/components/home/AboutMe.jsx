@@ -33,10 +33,10 @@ const AboutMe = ({ heading, message, message2, link, imgSize, resume }) => {
     <div
       id="aboutme"
       className="jumbotron jumbotron-fluid m-0"
-      style={{ minHeight: "100vh", backgroundColor: "#F6F1EC" }}
+      style={{backgroundColor: "#F6F1EC" }}
     >
       <div className="container container-fluid">
-        <div className="row center-div-native-about">
+        <div className="row">
           <div className="col-5 d-none d-lg-block align-self-center">
             {showPic && (
               <img
@@ -56,10 +56,10 @@ const AboutMe = ({ heading, message, message2, link, imgSize, resume }) => {
             >
               {heading}
             </h2>
-            <p className="lead text-center" style={{ color: "#5E5946" }}>
+            <p className="lead text-center increase-weight" style={{ color: "#5E5946" }}>
               {message}
             </p>
-            <p className="lead text-center" style={{ color: "#5E5946" }}>
+            <p className="lead text-center increase-weight" style={{ color: "#5E5946" }}>
               {message2}
             </p>
             <br></br>

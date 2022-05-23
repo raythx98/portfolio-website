@@ -20,8 +20,8 @@ function Skills({ heading, languages, databases, backend, blockchain, devops }) 
     skillsTabRef
   );
   return (
-    <Jumbotron ref={skillsTabRef} fluid className="m-0" id="skills"  style={{minHeight:"100vh", maxHeight:"100vh", backgroundColor:"#F6F1EC"}}>
-      <Container className="p-5 center-div-native-skills">
+    <Jumbotron ref={skillsTabRef} fluid className="m-0" id="skills"  style={{backgroundColor:"#F6F1EC"}}>
+      <Container className="p-5">
         <h2 ref={skillsTabRef} className="display-4 pb-5 text-center" style={{color:"#5E5946"}}>
           {heading}
         </h2>

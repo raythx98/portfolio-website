@@ -38,7 +38,7 @@ const Navigation = React.forwardRef((props, ref) => {
       }`}
       expand="lg"
     >
-      <Navbar.Brand style={{color:"#5E5946"}} href={process.env.PUBLIC_URL + "/#home"}>
+      <Navbar.Brand className="pr-2" style={{color:"#5E5946", fontWeight:450}} href={process.env.PUBLIC_URL + "/#home"}>
         {`<${mainBody.firstName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" style={{color:"#5E5946"}}/>
@@ -52,7 +52,7 @@ const Navigation = React.forwardRef((props, ref) => {
           {about.show && (
             <Nav.Link
               className="nav-link lead"
-              style={{color:"#5E5946"}}
+              // style={{color:"#5E5946", fontWeight:350}}
               href={process.env.PUBLIC_URL + "/#aboutme"}
             >
               About
@@ -61,7 +61,6 @@ const Navigation = React.forwardRef((props, ref) => {
           {(
             <Nav.Link
               className="nav-link lead"
-              style={{color:"#5E5946"}}
               href={process.env.PUBLIC_URL + "/#experience"}
             >
               Experience
@@ -70,7 +69,6 @@ const Navigation = React.forwardRef((props, ref) => {
           {skills.show && (
             <Nav.Link
               className="nav-link lead"
-              style={{color:"#5E5946"}}
               href={process.env.PUBLIC_URL + "/#skills"}
             >
               Skills
@@ -79,7 +77,6 @@ const Navigation = React.forwardRef((props, ref) => {
           {repos.show && (
             <Nav.Link
               className="nav-link lead"
-              style={{color:"#5E5946"}}
               href={process.env.PUBLIC_URL + "/#projects"}
             >
               Projects
@@ -87,14 +84,20 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           {<Nav.Link
             className="nav-link lead"
-            style={{color:"#5E5946"}}
+            href="https://blog.raythx.com"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Blog
+          </Nav.Link>}
+          {<Nav.Link
+            className="nav-link lead"
             href={about.resume}
             target="_blank"
             rel="noreferrer noopener"
           >
             Resume
           </Nav.Link>}
-          
           
         </Nav>
       </Navbar.Collapse>
