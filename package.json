@@ -14,7 +14,6 @@
     "@material-ui/icons": "^4.11.3",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.2",
-    "gh-pages": "^2.2.0",
     "jquery": "^3.5.1",
     "mdb-react-ui-kit": "^3.0.0",
     "node-sass": "^4.14.1",
@@ -53,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
