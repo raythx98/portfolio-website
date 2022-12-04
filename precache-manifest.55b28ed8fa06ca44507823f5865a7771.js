@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fb6c47421ce781f9dbef77d1352ce24b",
+    "revision": "5f5c838c6d20e059766e6a6effc08e51",
     "url": "/index.html"
   },
   {
-    "revision": "1ce44945748fb2750f7f",
+    "revision": "82b30e437fc220aa071a",
     "url": "/static/css/main.62dd7419.chunk.css"
   },
   {
-    "revision": "fd5227b4613ecf4f6c66",
-    "url": "/static/js/2.215abb6a.chunk.js"
+    "revision": "72dcc353ecd151245bb5",
+    "url": "/static/js/2.8c9e5f39.chunk.js"
   },
   {
     "revision": "1a3cc71403f332d098a2b9cdd7c4c36d",
-    "url": "/static/js/2.215abb6a.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.8c9e5f39.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1ce44945748fb2750f7f",
-    "url": "/static/js/main.c8f41151.chunk.js"
+    "revision": "82b30e437fc220aa071a",
+    "url": "/static/js/main.502b11fc.chunk.js"
   },
   {
     "revision": "f52ba179432c3be28857",
     "url": "/static/js/runtime-main.554504a0.js"
   },
   {
-    "revision": "b63e624d8ffe231eb2cb1899c2074619",
-    "url": "/static/media/Ray Toh CV.b63e624d.pdf"
+    "revision": "2577dcc3154d50fda9c1e4e75c039c5c",
+    "url": "/static/media/Ray Toh CV.2577dcc3.pdf"
   },
   {
-    "revision": "e349f20eed602875bb83bf4f8a76274f",
-    "url": "/static/media/e-commerce.e349f20e.jpeg"
+    "revision": "a53e8b03e53bb70f9a15d3c30ce597b8",
+    "url": "/static/media/blog.a53e8b03.jpeg"
   },
   {
     "revision": "b294a688fd5010358f99863c180c7bc5",
@@ -44,7 +44,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ray.adb7a25a.png"
   },
   {
-    "revision": "0afaec58c515e8f2a1c5e82d6b2218c7",
-    "url": "/static/media/telegram-bot.0afaec58.png"
+    "revision": "eed34b1707783493da4f04133d2dc9f8",
+    "url": "/static/media/url-shortener.eed34b17.jpeg"
   }
 ]);
