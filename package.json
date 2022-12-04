@@ -5,9 +5,9 @@
   "version": "2.0.0",
   "private": true,
   "author": {
-    "name": "Hashir Shoaib",
-    "email": "hashirshoaeb@gmail.com",
-    "url": "https://github.com/hashirshoaeb"
+    "name": "Ray Toh",
+    "email": "raythx98@gmail.com",
+    "url": "https://github.com/raythx98"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.4",

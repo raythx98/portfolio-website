@@ -11,7 +11,7 @@ const mainBody = {
   firstName: "Ray Toh",
   middleName: "",
   lastName: "H. X.",
-  message: "Software Engineer | Blockchain Enthusiast",
+  message: "Software Engineer | Coding Tutor",
   icons: [
     {
       image: "fa-github",
@@ -52,7 +52,7 @@ const about = {
   imageLink: require("../assets/ray.png"),
   imageSize: 375,
   message:
-    "I am a software engineer, excited by the potential of technology in solving real-world problems. I have a formal education in NUS Computer Science, where I specialised in AI, computer networking and information security. With these skills, it is my conviction to create a digitalised world backed by an impenetrable system." ,
+    "I am a software engineer, excited by the potential of technology in solving real-world problems. I'm an NUS Computer Science alumnus, specializing in AI, computer networking and information security. With these skills, it is my conviction to create a digitalized world backed by an impenetrable system." ,
   message2:
     "I started programming at the small age of 16 — I was fresh out of high school and assigned to engineer chat-bot technology during my first ever internship. During the process, I learned the fundamentals of programming and software development and applied them to create a working chat-bot prototype. Having enjoyed my experience, I decided to further my interest in Computer Science, which brings me to where I am today. ",
   resume: require("../assets/Ray Toh CV.pdf"),
@@ -100,13 +100,10 @@ const skills = {
   show: true,
   heading: "Skills",
   languages: [
-    { name: "Golang", value: 50 },
     { name: "C++", value: 90 },
+    { name: "Go", value: 85 },
     { name: "Python", value: 85 },
     { name: "Java", value: 80 },
-    { name: "C#", value: 70 },
-    { name: "C", value: 65 },
-    { name: "JavaScript", value: 55 },
   ],
   databases: [
     { name: "PostgreSQL", value: 90 },
@@ -116,25 +113,21 @@ const skills = {
     { name: "Redis", value: 55 },
     { name: "Elasticsearch", value: 50 }
   ],
-  backend: [
-    { name: "Node.js", value: 80 },
-    { name: "Django", value: 90 },
-    { name: "RESTful APIs", value: 85 },
-    { name: "AWS EC2", value: 80 },
-    { name: "AWS Lambdas", value: 85 },
-    { name: "AWS S3", value: 75 },
-    { name: "AWS RDS", value: 70 },
-  ],
-  blockchain: [
-    { name: "Solidity", value: 15 },
-    { name: "EVM", value: 10 }
-  ],
-  devops: [
+  technologies: [
+    { name: "Docker", value: 80 },
+    { name: "Kubernetes", value: 85 },
+    { name: "Kafka", value: 75 },
+    { name: "Nginx", value: 70 },
     { name: "Git", value: 90 },
-    { name: "OpenShift", value: 75 },
-    { name: "Kubernetes", value: 70 },
-    { name: "Apache Kafka", value: 65 },
-    { name: "Jenkins", value: 60 }
+    { name: "gRPC", value: 80 },
+    { name: "AWS", value: 90 },
+    { name: "GCP", value: 75 },
+  ],
+  frameworks: [
+    { name: "Django", value: 90 },
+    { name: "Express.js", value: 85 },
+    { name: "React.js", value: 80 },
+    { name: "Node.js", value: 80 },
   ],
 };
 
@@ -143,24 +136,24 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Blockchain opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hongxian@comp.nus.edu.sg",
+    "I'm currently looking for full-time Software Engineering or Coding Tutoring opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+  email: "raythx98@gmail.com",
 };
 
 const experiences = {
   show: false,
   heading: "Experiences",
   data: [
-    {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
-    },
-    {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
-    },
+    // {
+    //   role: 'Software Engineer',// Here Add Company Name
+    //   companylogo: require('../assets/img/dell.png'),
+    //   date: 'June 2018 – Present',
+    // },
+    // {
+    //   role: 'Front-End Developer',
+    //   companylogo: require('../assets/img/boeing.png'),
+    //   date: 'May 2017 – May 2018',
+    // },
   ]
 }
 

@@ -7,7 +7,7 @@ import './style.min.css';
 import { Jumbotron, Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 
-function Skills({ heading, languages, databases, backend, blockchain, devops }) {
+function Skills({ heading, languages, databases, technologies, frameworks }) {
   const skillsTabRef = React.useRef();
   const [isScrolled, setIsScrolled] = React.useState(false);
   //const navbarDimensions = useResizeObserver(navbarMenuRef);
@@ -50,29 +50,20 @@ function Skills({ heading, languages, databases, backend, blockchain, devops }) 
           </Tab>
           <Tab
             tabClassName="skills-tab lead"
-            eventKey="backend"
-            title="Backend"
+            eventKey="technologies"
+            title="Technologies"
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={backend} isScrolled={isScrolled} />
+              <SkillsTab skills={technologies} isScrolled={isScrolled} />
             </Row>
           </Tab>
           <Tab
             tabClassName="skills-tab lead"
-            eventKey="blockchain"
-            title="Blockchain"
+            eventKey="frameworks"
+            title="Frameworks"
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={blockchain} isScrolled={isScrolled} />
-            </Row>
-          </Tab>
-          <Tab
-            tabClassName="skills-tab lead"
-            eventKey="devops"
-            title="Devops"
-          >
-            <Row className="pt-3 px-1">
-              <SkillsTab skills={devops} isScrolled={isScrolled} />
+              <SkillsTab skills={frameworks} isScrolled={isScrolled} />
             </Row>
           </Tab>
         </Tabs>

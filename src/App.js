@@ -54,9 +54,8 @@ const Home = React.forwardRef((props, ref) => {
           heading={skills.heading}
           languages={skills.languages}
           databases={skills.databases}
-          backend={skills.backend}
-          blockchain={skills.blockchain}
-          devops={skills.devops}
+          technologies={skills.technologies}
+          frameworks={skills.frameworks}
         />
       )}
       {repos.show && (
