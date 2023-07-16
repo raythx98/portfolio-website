@@ -31,7 +31,7 @@ const projectsArray = [
     imgLink: require("../../assets/img/portfolio.png"),
     name: "Portfolio Website",
     description: "Built a mobile reactive webpage to showcase my projects and achievements. Acquired and managed a domain name and leveraged on Github Pages as a web hosting tool.",
-    languages: ["React", "Bootstrap", "Material-UI","gh-pages"],
+    languages: ["React.js", "Bootstrap", "Material-UI","gh-pages"],
     repo_url: "https://github.com/raythx98/react-portfolio-website",
     demo_url: "https://raythx.com",
   },

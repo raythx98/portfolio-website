@@ -19,15 +19,15 @@ const Experience = () => {
 						className="vertical-timeline-element--work"
 						contentStyle={{ background: '#AE887B', color: '#F6F1EC' }}
 						contentArrowStyle={{ borderRight: '7px solid  #AE887B' }}
-						date="Aug 2022 - Present"
+						date="Jan 2023 - Present"
 						iconStyle={{ background: '#5E5946', color: '#F6F1EC' }}
 						icon={<WorkIcon />}
 					>
-						<h3 className="vertical-timeline-element-title">Graduate Tutor</h3>
-						<h4 className="vertical-timeline-element-subtitle pt-1">Part-time</h4>
-						<h4 className="vertical-timeline-element-subtitle pt-1">National University of Singapore</h4>
+						<h3 className="vertical-timeline-element-title">Software Engineer</h3>
+						<h4 className="vertical-timeline-element-subtitle pt-1">Full-Time</h4>
+						<h4 className="vertical-timeline-element-subtitle pt-1">Getgo Technologies, Singapore</h4>
 						<p>
-							Programming Methodology, Microarchitecture
+							Go, C#, .Net, MySQL, Redis, Elasticsearch, gRPC, Solace, Docker, AWS
 						</p>
 					</VerticalTimelineElement>
 

@@ -11,7 +11,7 @@ const mainBody = {
   firstName: "Ray Toh",
   middleName: "",
   lastName: "H. X.",
-  message: "Software Engineer | Coding Tutor",
+  message: "Software Engineer | Large-Scale Systems | Low-Level Optimizations",
   icons: [
     {
       image: "fa-github",
@@ -52,9 +52,11 @@ const about = {
   imageLink: require("../assets/ray.png"),
   imageSize: 375,
   message:
-    "I am a software engineer, excited by the potential of technology in solving real-world problems. I'm an NUS Computer Science alumnus, specializing in AI, computer networking and information security. With these skills, it is my conviction to create a digitalized world backed by an impenetrable system." ,
+    "I am a passionate software engineer specializing in large-scale microservices and low-level optimizations." ,
   message2:
-    "I started programming at the small age of 16 — I was fresh out of high school and assigned to engineer chat-bot technology during my first ever internship. During the process, I learned the fundamentals of programming and software development and applied them to create a working chat-bot prototype. Having enjoyed my experience, I decided to further my interest in Computer Science, which brings me to where I am today. ",
+    "Driven by a desire to build robust and scalable systems, I am particularly drawn to the realm of large-scale microservices. I am captivated by the intricacies involved in architecting and developing software that can seamlessly handle massive workloads while maintaining high availability and fault tolerance. ",
+  message3:
+    "My passion extends to the realm of low-level optimization. I thrive on the challenge of analyzing and fine-tuning code to squeeze out every ounce of performance. It brings me great satisfaction to meticulously optimize algorithms, data structures, and system interactions.",
   resume: require("../assets/Ray Toh CV.pdf"),
 };
 
@@ -103,29 +105,30 @@ const skills = {
     { name: "C++", value: 90 },
     { name: "Go", value: 85 },
     { name: "Python", value: 85 },
-    { name: "Java", value: 80 },
+    { name: "C#", value: 80 },
   ],
   databases: [
     { name: "PostgreSQL", value: 90 },
-    { name: "MySQL", value: 85 },
-    { name: "MongoDB", value: 80 },
-    { name: "MariaDB", value: 60 },
-    { name: "Redis", value: 55 },
-    { name: "Elasticsearch", value: 50 }
+    { name: "MySQL", value: 90 },
+    { name: "Redis", value: 80 },
+    { name: "Elasticsearch", value: 80 },
+    { name: "MongoDB", value: 70 },
   ],
   technologies: [
-    { name: "Docker", value: 80 },
-    { name: "Kubernetes", value: 85 },
-    { name: "Kafka", value: 75 },
-    { name: "Nginx", value: 70 },
     { name: "Git", value: 90 },
-    { name: "gRPC", value: 80 },
     { name: "AWS", value: 90 },
-    { name: "GCP", value: 75 },
+    { name: "Docker", value: 85 },
+    { name: "Kubernetes", value: 80 },
+    { name: "Kafka", value: 80 },
+    { name: "Solace", value: 80 },
+    { name: "gRPC", value: 80 },
+    { name: "Google Cloud", value: 75 },
   ],
   frameworks: [
-    { name: "Django", value: 90 },
-    { name: "Express.js", value: 85 },
+    { name: ".Net 6.0", value: 90 },
+    { name: "Gin (Go HTTP)", value: 90 },
+    { name: "Gorm (Go ORM)", value: 90 },
+    { name: "Golang-migrate (Database Migration)", value: 90 },
     { name: "React.js", value: 80 },
     { name: "Node.js", value: 80 },
   ],
@@ -136,7 +139,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Coding Tutoring opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+  "I am actively seeking exciting full-time Software Engineering opportunities within tech companies or trading firms! If you happen to come across any open positions, have inquiries to make, or simply want to connect and say hello, please don't hesitate to reach out to me via email at",
   email: "raythx98@gmail.com",
 };
 
